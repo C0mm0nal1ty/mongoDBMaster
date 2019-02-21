@@ -1,0 +1,25 @@
+<head>
+
+</head>
+
+<body>
+  <button type="button" name="button"> Click
+  </button>
+
+  <script type="text/javascript">
+    let counter = 0;
+
+    document.querySelector('button').addEventListener('click',
+    () => {++counter;}
+  );
+
+  setTimeout( () => {
+    if(counter > 5){
+      alert('you won! Your total clicks:' + counter );
+    } else {
+      alert('you lost');
+    }
+
+  }, 2000);
+  </script>
+</body>
